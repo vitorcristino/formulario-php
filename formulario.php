@@ -114,6 +114,7 @@
         #submit:hover{
             background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
         }
+        input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
     </style>
 </head>
 <body>
@@ -133,7 +134,7 @@
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                    <input type="number" name="telefone" id="telefone" class="inputUser" minlength="3" required>
                     <label for="telefone" class="labelInput">Telefone</label>
                 </div>
                 <p>Sexo:</p>
